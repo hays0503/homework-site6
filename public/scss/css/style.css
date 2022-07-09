@@ -399,11 +399,13 @@ a:hover {
   margin-top: 15px;
 }
 .promo-block .promo-block-button #btn-watch-trailer {
+  color: #ffffff;
   background: #8dd83d;
   padding: 15px;
   border-radius: 4px;
 }
 .promo-block .promo-block-button #btn-explore-games {
+  color: #ffffff;
   background: #828282;
   padding: 15px;
   border-radius: 4px;
@@ -568,15 +570,17 @@ a:hover {
   gap: 15px;
   margin-top: 15px;
 }
-.design-lab-section .design-lab-section-description .design-lab-section-button #btn-watch-trailer {
+.design-lab-section .design-lab-section-description .design-lab-section-button #btn-explore-consoles {
+  padding: 15px;
+  border-radius: 4px;
+  color: #fff;
   background: #8dd83d;
-  padding: 15px;
-  border-radius: 4px;
 }
-.design-lab-section .design-lab-section-description .design-lab-section-button #btn-explore-games {
-  background: #828282;
+.design-lab-section .design-lab-section-description .design-lab-section-button #btn-design-yours {
   padding: 15px;
   border-radius: 4px;
+  color: #fff;
+  background: #828282;
 }
 
 .footer {

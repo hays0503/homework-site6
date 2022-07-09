@@ -90,11 +90,13 @@
     margin-top: 15px;
 
     #btn-watch-trailer {
+      color: #ffffff;
       background: #8dd83d;
       padding: 15px;
       border-radius: 4px;
     }
     #btn-explore-games {
+      color: #ffffff;
       background: #828282;
       padding: 15px;
       border-radius: 4px;
@@ -234,15 +236,17 @@
       gap: 15px;
       margin-top: 15px;
 
-      #btn-watch-trailer {
+      #btn-explore-consoles {
+        padding: 15px;
+        border-radius: 4px;
+        color: #fff;
         background: #8dd83d;
-        padding: 15px;
-        border-radius: 4px;
       }
-      #btn-explore-games {
-        background: #828282;
+      #btn-design-yours {
         padding: 15px;
         border-radius: 4px;
+        color: #fff;
+        background: #828282;
       }
     }
   }
