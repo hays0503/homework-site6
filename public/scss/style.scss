@@ -1,0 +1,181 @@
+@import "./clearfix.scss";
+@import "./toolbox.scss";
+
+//Ширина  контентной части
+$windows-width: calc(98.7vw);
+
+//Основной блок
+.main-block {
+  width: $windows-width;
+}
+
+.navbar-container {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  width: $windows-width;
+  background: #373a3c;
+  height: 60px;
+  border-radius: 4px;
+}
+
+//Меню навигации
+.navbar {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc($windows-width)-10;
+
+  ul {
+    display: inherit;
+    column-gap: 2.5rem;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+}
+
+//Логотип в меню навигации
+.navbar-logo {
+  background-repeat: no-repeat;
+  background-image: url(../../img/xbox.svg);
+  width: 96px;
+  height: 29px;
+  //  margin-left: 2rem;
+}
+
+//Элементы меню навигации (текст)
+.navbar-item {
+  //TODO
+}
+
+.promo-container {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: end;
+  width: calc($windows-width)-30;
+  height: calc($windows-width / 2.15);
+}
+
+//"Промо" блок
+.promo-block {
+  display: flex;
+  flex-direction: column;
+  min-width: $windows-width;
+  min-height: calc($windows-width / 2.15);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../../img/bg.png);
+
+  //Описание блока "Промо"
+  .promo-block-description {
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+
+  //Кнопка "Промо" блока
+  .promo-block-button {
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 10px;
+
+    #btn-watch-trailer {
+      background: #8dd83d;
+      padding: 5px;
+      border-radius: 4px;
+    }
+    #btn-explore-games {
+      background: #828282;
+      padding: 5px;
+      border-radius: 4px;
+    }
+  }
+}
+
+//Раздел основных "Моментов"
+.highlight-section {
+  width: $windows-width;
+  height: calc($windows-width/ 1.6);
+  background-color: #4f4f4f;
+  flex-direction: column;
+
+  button {
+    background: #8dd83d;
+    border-radius: 4px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+  }
+
+  .highlight-section-main-description {
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    color: #ffffff;
+  }
+  .highlight-section-carts {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 1rem;
+  }
+  .highlight-section-cart {
+    width: 30vw;
+    height: 75vh;
+    flex-direction: column;
+    row-gap: 4rem;
+    background: #ffffff;
+    border: 1px solid #8dd83d;
+    border-radius: 4px;
+  }
+
+  .highlight-section-cart-description {
+    width: 100%;
+    row-gap: 1rem;
+    padding-left: 3rem;
+    flex-direction: column;
+    text-align: left;
+    line-height: 2rem;
+    color: #435766;
+    font-style: normal;
+    font-weight: 400;
+
+    small {
+      font-size: 18px;
+      line-height: 21px;
+      /* identical to box height */
+    }
+    h2 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  .cart-img {
+    width: 200px;
+    height: 104px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background: url(../../img/3.png);
+  }
+}
