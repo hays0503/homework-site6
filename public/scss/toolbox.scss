@@ -1,5 +1,8 @@
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900'");
 
+//Ширина  контентной части
+$windows-width: calc(98.7vw);
+
 // Шрифт страницы
 $font: "Roboto", sans-serif;
 
@@ -37,4 +40,63 @@ a {
   display: flex;
   justify-content: right;
   align-items: center;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.width50 {
+  width: 50%;
+}
+.height100 {
+  height: 100%;
+}
+.z-index0 {
+  z-index: 0;
+}
+.z-index1 {
+  z-index: 1;
+}
+.z-index2 {
+  z-index: 2;
+}
+.z-index3 {
+  z-index: 3;
+}
+.z-index4 {
+  z-index: 4;
+}
+
+.relative {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.absolute {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.image100 {
+  width: $windows-width;
+  height: auto;
+}
+
+.space-between {
+  width: 89.5%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+#color-green {
+  color: #7dd42f;
 }

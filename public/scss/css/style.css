@@ -218,6 +218,74 @@ a:hover {
           align-items: center;
 }
 
+.width100 {
+  width: 100%;
+}
+
+.width50 {
+  width: 50%;
+}
+
+.height100 {
+  height: 100%;
+}
+
+.z-index0 {
+  z-index: 0;
+}
+
+.z-index1 {
+  z-index: 1;
+}
+
+.z-index2 {
+  z-index: 2;
+}
+
+.z-index3 {
+  z-index: 3;
+}
+
+.z-index4 {
+  z-index: 4;
+}
+
+.relative {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.absolute {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.image100 {
+  width: 98.7vw;
+  height: auto;
+}
+
+.space-between {
+  width: 89.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #ffffff;
+}
+
+#color-green {
+  color: #7dd42f;
+}
+
 .main-block {
   width: 98.7vw;
 }
@@ -296,10 +364,7 @@ a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   min-width: 98.7vw;
-  min-height: 45.9069767442vw;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(../../img/bg.png);
+  min-height: 45.0684931507vw;
 }
 .promo-block .promo-block-description {
   display: -webkit-box;
@@ -317,19 +382,30 @@ a:hover {
   color: #ffffff;
 }
 .promo-block .promo-block-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #fff;
   font-size: 23px;
   font-weight: bold;
-  padding: 10px;
+  width: 100%;
+  gap: 15px;
+  margin-top: 15px;
 }
 .promo-block .promo-block-button #btn-watch-trailer {
   background: #8dd83d;
-  padding: 5px;
+  padding: 15px;
   border-radius: 4px;
 }
 .promo-block .promo-block-button #btn-explore-games {
   background: #828282;
-  padding: 5px;
+  padding: 15px;
   border-radius: 4px;
 }
 
@@ -375,19 +451,22 @@ a:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 2rem;
-  margin: 1rem;
+  margin: 2rem;
 }
 .highlight-section .highlight-section-cart {
   width: 30vw;
-  height: 75vh;
+  height: 40vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 4rem;
+  row-gap: 15%;
   background: #ffffff;
   border: 1px solid #8dd83d;
   border-radius: 4px;
+}
+.highlight-section .highlight-section-cart button {
+  margin: 1rem;
 }
 .highlight-section .highlight-section-cart-description {
   width: 100%;
@@ -413,9 +492,138 @@ a:hover {
   line-height: 28px;
 }
 .highlight-section .cart-img {
-  width: 200px;
-  height: 104px;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.highlight-section #id1 {
+  width: 30vw;
+  height: 40vh;
+  background: url(../../img/1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0rem 0rem;
+}
+.highlight-section #id2 {
+  width: 30vw;
+  height: 40vh;
+  background: url(../../img/2.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.highlight-section #id3 {
+  width: 30vw;
+  height: 40vh;
   background: url(../../img/3.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.design-lab-section {
+  width: 98.7vw;
+  height: 32.9vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: -o-radial-gradient(50% 0%, 100% 100%, rgba(193, 255, 127, 0.1) 0%, rgba(141, 216, 61, 0.1) 100%);
+  background: radial-gradient(100% 100% at 50% 0%, rgba(193, 255, 127, 0.1) 0%, rgba(141, 216, 61, 0.1) 100%);
+}
+.design-lab-section .design-lab-section-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+}
+.design-lab-section .design-lab-section-description h1 {
+  font-size: 48px;
+  line-height: 56px;
+}
+.design-lab-section .design-lab-section-description small {
+  font-size: 24px;
+  line-height: 28px;
+}
+.design-lab-section .design-lab-section-description .design-lab-section-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 23px;
+  font-weight: bold;
+  width: 100%;
+  gap: 15px;
+  margin-top: 15px;
+}
+.design-lab-section .design-lab-section-description .design-lab-section-button #btn-watch-trailer {
+  background: #8dd83d;
+  padding: 15px;
+  border-radius: 4px;
+}
+.design-lab-section .design-lab-section-description .design-lab-section-button #btn-explore-games {
+  background: #828282;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 98.7vw;
+  height: 19.74vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #373a3c;
+  border-radius: 4px;
+}
+.footer .container {
+  padding: 15px;
+}
+.footer .social {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+.footer .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.footer .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 29.9090909091vw;
+}
+.footer .column ul {
+  gap: 0.5rem;
+}
+.footer .column ul li {
+  list-style: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 40px;
+  color: #ffffff;
 }
