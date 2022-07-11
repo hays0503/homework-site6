@@ -382,17 +382,51 @@ a:hover {
   font-style: normal;
 }
 .promo-block #arrow-icon-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
+  z-index: 4;
   font-size: 48px;
   color: #ffffff;
-  background-color: red;
-  top: 50%;
+  background-color: rgba(61, 61, 61, 0.5);
+  height: 100%;
+  left: 0;
+  right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+.promo-block #arrow-icon-left:hover {
+  -webkit-filter: opacity(80%);
+          filter: opacity(80%);
+  color: rgba(0, 0, 0, 0.5);
 }
 .promo-block #arrow-icon-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 4;
   font-size: 48px;
   color: #ffffff;
-  background-color: red;
-  top: 50%;
+  background-color: rgba(61, 61, 61, 0.5);
+  left: auto;
+  right: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 100%;
+}
+.promo-block #arrow-icon-right:hover {
+  -webkit-filter: opacity(80%);
+          filter: opacity(80%);
+  color: rgba(0, 0, 0, 0.5);
 }
 .promo-block .promo-block-button {
   width: 100%;
@@ -420,12 +454,22 @@ a:hover {
   color: #fff;
   background: #8dd83d;
 }
+.promo-block .promo-block-button #btn-watch-trailer:hover {
+  -webkit-filter: opacity(80%);
+          filter: opacity(80%);
+  color: rgba(0, 0, 0, 0.5);
+}
 .promo-block .promo-block-button #btn-explore-games {
   padding: 15px;
   border-radius: 4px;
   border-color: rgba(255, 255, 255, 0);
   color: #fff;
   background: #828282;
+}
+.promo-block .promo-block-button #btn-explore-games:hover {
+  -webkit-filter: opacity(80%);
+          filter: opacity(80%);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .highlight-section {
@@ -454,6 +498,11 @@ a:hover {
   background: #8dd83d;
   border-radius: 4px;
   border-color: rgba(255, 255, 255, 0);
+}
+.highlight-section button:hover {
+  -webkit-filter: opacity(80%);
+          filter: opacity(80%);
+  color: rgba(0, 0, 0, 0.5);
 }
 .highlight-section .highlight-section-main-description {
   display: -webkit-box;
@@ -609,12 +658,22 @@ a:hover {
   color: #fff;
   background: #8dd83d;
 }
+.design-lab-section .design-lab-section-description .design-lab-section-button #btn-explore-consoles:hover {
+  -webkit-filter: opacity(80%);
+          filter: opacity(80%);
+  color: rgba(0, 0, 0, 0.5);
+}
 .design-lab-section .design-lab-section-description .design-lab-section-button #btn-design-yours {
   padding: 15px;
   border-radius: 4px;
   border-color: rgba(255, 255, 255, 0);
   color: #fff;
   background: #828282;
+}
+.design-lab-section .design-lab-section-description .design-lab-section-button #btn-design-yours:hover {
+  -webkit-filter: opacity(80%);
+          filter: opacity(80%);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .footer {
@@ -669,4 +728,9 @@ a:hover {
   color: #ffffff;
   font-style: normal;
   list-style: none;
+}
+.footer .column ul li:hover {
+  -webkit-filter: opacity(80%);
+          filter: opacity(80%);
+  color: rgba(0, 0, 0, 0.5);
 }

@@ -59,17 +59,35 @@
   }
 
   #arrow-icon-left {
+    display: flex;
+    align-items: center;
     position: absolute;
+    z-index: 4;
     font-size: 48px;
     color: #ffffff;
-    background-color: red;
-    top: 50%;
+    background-color: rgba($color: #3d3d3d, $alpha: 0.5);
+    height: 100%;
+    left: 0;
+    right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    @include hover-action();
   }
   #arrow-icon-right {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 4;
     font-size: 48px;
     color: #ffffff;
-    background-color: red;
-    top: 50%;
+    background-color: rgba($color: #3d3d3d, $alpha: 0.5);
+    left: auto;
+    right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 100%;
+    @include hover-action();
   }
 
   //Кнопка "Промо" блока
@@ -111,6 +129,7 @@
     background: #8dd83d;
     border-radius: 4px;
     border-color: rgba(255, 255, 255, 0);
+    @include hover-action();
   }
 
   .highlight-section-main-description {
@@ -232,6 +251,7 @@
       li {
         @include font-mixin(400, 14px, 40px, normal, #ffffff);
         list-style: none;
+        @include hover-action();
       }
     }
   }
