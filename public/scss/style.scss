@@ -58,6 +58,20 @@
     @include font-mixin(400, 24px, 28px, normal, #ffffff);
   }
 
+  #arrow-icon-left {
+    position: absolute;
+    font-size: 48px;
+    color: #ffffff;
+    background-color: red;
+    top: 50%;
+  }
+  #arrow-icon-right {
+    font-size: 48px;
+    color: #ffffff;
+    background-color: red;
+    top: 50%;
+  }
+
   //Кнопка "Промо" блока
   .promo-block-button {
     width: 100%;

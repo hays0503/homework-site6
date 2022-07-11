@@ -381,6 +381,19 @@ a:hover {
   color: #ffffff;
   font-style: normal;
 }
+.promo-block #arrow-icon-left {
+  position: absolute;
+  font-size: 48px;
+  color: #ffffff;
+  background-color: red;
+  top: 50%;
+}
+.promo-block #arrow-icon-right {
+  font-size: 48px;
+  color: #ffffff;
+  background-color: red;
+  top: 50%;
+}
 .promo-block .promo-block-button {
   width: 100%;
   display: -webkit-box;
