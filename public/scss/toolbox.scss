@@ -100,3 +100,31 @@ a {
 #color-green {
   color: #7dd42f;
 }
+
+@mixin standard-btn {
+  padding: 15px;
+  border-radius: 4px;
+  border-color: rgba(255, 255, 255, 0);
+  color: #fff;
+}
+
+@mixin standard-img($x: 100%, $y: 100%, $background-size: initial) {
+  width: $x !important;
+  height: $y !important;
+  background-size: $background-size !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% !important;
+}
+
+@mixin font-mixin($font-weight: 400, $font-size: 16px, $line-height: 40px, $font-style: normal, $color: #ffffff) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  font-style: $font-style;
+}
+
+@mixin flex-row-column($display: inline-flex, $flex-direction: row) {
+  display: $display;
+  flex-direction: $flex-direction;
+}
